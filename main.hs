@@ -1,12 +1,9 @@
 module Main where
 
 import ClassyPrelude.Conduit as C
-import Data.List (last)
-import qualified Data.List as L
 import Data.Conduit
 import Data.Conduit.TMChan
 import Data.Conduit.List as CL
-import Data.Array.MArray (getElems, newListArray, writeArray)
 import Control.Concurrent (forkIO, ThreadId)
 import Control.Concurrent.STM
 import Control.Concurrent.STM.TSkipList as SL
