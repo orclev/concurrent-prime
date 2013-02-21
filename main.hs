@@ -25,7 +25,7 @@ potentialPrimesList :: IntType   -- ^ Largest number to check for prime status
 potentialPrimesList target = C.filter odd [3..upperBound target]
 
 -- |Returns a SkipList of all the potential prime numbers below some target value
-potentialPrimesSkipList :: IntType                         -- ^ Largest number to check for prime status
+potentialPrimesSkipList :: IntType                      -- ^ Largest number to check for prime status
                      -> STM (TSkipList IntType IntType) -- ^ List of potentially prime numbers
 potentialPrimesSkipList target = do
     x <- new 0.5 5
